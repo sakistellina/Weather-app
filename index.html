@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-app</title>
-    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York City</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Tuesday, 05:00</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -32,15 +34,15 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>12</strong>
+                  <strong id="temperature"></strong>
                   <span class="units"> °C | <a href="#">°F</a></span>
                 </div>
               </div>
             </div>
             <ul>
               <li>Precipitation: 3%</li>
-              <li>Humudity: 67%</li>
-              <li>Wind: 6 km/h</li>
+              <li>Humudity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
             </ul>
           </div>
         </div>
