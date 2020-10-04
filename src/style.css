@@ -1,5 +1,8 @@
 body {
+  background-image: url(https://images.pexels.com/photos/2449543/pexels-photo-2449543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   font-family: "Quicksand", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -30,7 +33,7 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, #7fb5ca -10%, #e7f0fd 100%);
   margin: 30px auto;
   border-radius: 20px;
   max-width: 600px;
